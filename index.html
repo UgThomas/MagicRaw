@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Magic Raw</title>
+    <link rel="icon" href="web/icons8-cartas-de-tarô-ios-17-outlined-16.png">
+    <link rel="icon" href="web/icons8-cartas-de-tarô-ios-17-outlined-32.png">
+</head>
+
+<body>
+    <nav>
+        <button id="darkModeToggle">
+            <img id="darkModeIcon" src="web/icons8-símbolo-da-lua-32.png" alt="Lua">
+        </button>
+    </nav>
+    <main>
+        <h1>Magic Raw</h1>
+        <section>
+            <input type="text" placeholder="Digite o nome da carta" id="campo-pesquisa">
+            <button id="botao-pesquisar" onclick="pesquisar()">Pesquisar</button>
+
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Magic Raw. Todos direitos reservados</p>
+        <p>Entre em contato pelo email: thomasjoaovitor56@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

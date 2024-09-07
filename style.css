@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap");
+
+body {
+  font-family: "Grenze Gotisch", sans-serif;
+  background-color: #dddddd;
+  color: #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e83411;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* Botão Dark Mode */
+#darkModeToggle {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#darkModeIcon {
+  width: 32px;
+  height: 32px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+section input {
+  font-family: "Grenze Gotisch", sans-serif;
+  width: 25rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  color: #45474b;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+section button {
+  font-family: "Grenze Gotisch", sans-serif;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: white;
+  color: #e83411;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.resultados-pesquisa {
+  width: 60rem;
+  height: 46vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.6rem;
+}
+
+.item-resultado {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-resultado img {
+  flex: 1;
+  object-fit: contain;
+  width: 20%;
+  margin-right: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.item-resultado img:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+
+.item-resultado h2 {
+  font-size: 1rem;
+  color: #222831;
+  margin-bottom: 35px;
+}
+
+.item-resultado a {
+  text-decoration: none;
+  color: #e83411;
+}
+
+.item-resultado a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1f2026;
+  color: #dedede;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1f2026;
+  color: #dedede;
+}
+
+body.dark-mode h1 {
+  color: #f05454;
+}
+
+body.dark-mode h2 {
+  color: #f05454;
+}
+
+body.dark-mode p {
+  color: #cccccc;
+}
+
+body.dark-mode a {
+  color: #00aaff;
+}
+
+body.dark-mode a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode section button {
+  background-color: #222831;
+  color: #dedede;
+}
+
+body.dark-mode .item-resultado {
+  background-color: #333;
+}
